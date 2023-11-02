@@ -1,3 +1,4 @@
+
 h4 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 100;
@@ -9,10 +10,19 @@ h4 {
   width: 330px;
   height: 50px;
   background-color: bisque;
-  border-radius: 10px;
+  border-radius: 25px;
   display: flex;
   align-items: center;
   flex-direction: row;
+  margin-left: 40%;
+}
+#song-selecter{
+  height: 160px;
+  width: 330px;
+  background-color: rgb(245, 238, 220);
+  margin-left: 40%;
+  margin-top: 30%;
+  border-radius: 25px;
 }
 #current-time {
   width: 40px;
@@ -26,7 +36,7 @@ h4 {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  padding-left: 10px;
+  padding-left: 20px;
   padding-right: 10px;
 }
 #seek-bar {
