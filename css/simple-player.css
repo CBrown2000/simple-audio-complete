@@ -5,6 +5,8 @@ h4 {
   padding-bottom: 4px;
   user-select: none;
 }
+/* container area */
+
 #container {
   width: 330px;
   height: 50px;
@@ -13,7 +15,46 @@ h4 {
   display: flex;
   align-items: center;
   flex-direction: row;
+  border-radius: 25px;
+  
 }
+
+/* record song changing buttons and hoverstates */
+
+#song-button-container{
+  width: 330px;
+  height: 115px;
+  background-color: beige;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  object-fit: contain;
+  border-radius: 25px;
+}
+
+#song1record{
+  width: 111px;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+#song2record{
+  width: 111px;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+#song3record{
+  width: 111px;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+
+
+
+
 #current-time {
   width: 40px;
   padding-left: 5px;
@@ -26,7 +67,7 @@ h4 {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  padding-left: 10px;
+  padding-left: 18px;
   padding-right: 10px;
 }
 #seek-bar {
