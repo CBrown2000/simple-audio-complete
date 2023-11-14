@@ -5,6 +5,7 @@ h4 {
   padding-bottom: 4px;
   user-select: none;
 }
+
 /* container area */
 
 #container {
@@ -16,12 +17,12 @@ h4 {
   align-items: center;
   flex-direction: row;
   border-radius: 25px;
-  
+
 }
 
 /* record song changing buttons and hoverstates */
 
-#song-button-container{
+#song-button-container {
   width: 330px;
   height: 115px;
   background-color: beige;
@@ -32,37 +33,43 @@ h4 {
   border-radius: 25px;
 }
 
-#song1record{
-  width: 111px;
-  height: 100%;
-  object-fit: contain;
-  cursor: pointer;
-}
-#song2record{
-  width: 111px;
-  height: 100%;
-  object-fit: contain;
-  cursor: pointer;
-}
-#song3record{
+/* Song pick buttons */
+
+#song1record {
   width: 111px;
   height: 100%;
   object-fit: contain;
   cursor: pointer;
 }
 
+#song2record {
+  width: 111px;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+#song3record {
+  width: 111px;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
 
 
 
+/* time stamp display */
 
 #current-time {
   width: 40px;
   padding-left: 5px;
 }
+
 #total-time {
   width: 40px;
   padding-left: 10px;
 }
+
 #play-pause-button {
   width: 20px;
   height: 20px;
@@ -70,6 +77,7 @@ h4 {
   padding-left: 18px;
   padding-right: 10px;
 }
+
 #seek-bar {
   width: 150px;
   margin-left: 10px;

@@ -30,7 +30,7 @@ function playSong(songIndex) {
     audio.src = songs[currentSongIndex].src;
     audio.play();
 }
- 
+
 // function that plays next song
 
 function nextSong() {
@@ -53,7 +53,7 @@ function previousSong() {
 
 //function to automatically play next song when audio ends.
 
-audio.onended = function(){
+audio.onended = function () {
     button.src = "images/play.svg";
     trackTime.innerHTML = formatTime(0);
     seekBar.value = 0;
@@ -74,7 +74,7 @@ audio.onended = function(){
 //     }
 
 
-
+// pause and play functions
 
 button.onclick = function () {
     if (audio.paused) {
