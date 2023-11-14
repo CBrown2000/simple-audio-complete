@@ -67,7 +67,7 @@ audio.onended = function () {
     nextSong();
 };
 
-
+// song buttons which switch the audio source on click
 
 song1.onclick = (event) => {
     currentSongIndex = 0
@@ -82,7 +82,7 @@ song2.onclick = (event) => {
 
 song3.onclick = (event) => {
     currentSongIndex = 2
-    audio.src = songs [currentSongIndex].src
+    audio.src = songs[currentSongIndex].src
 }
 
 
