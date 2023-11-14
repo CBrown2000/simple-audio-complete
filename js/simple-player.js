@@ -1,21 +1,27 @@
-const audio = new Audio("SongAudio/Nothing Can Stop Me (320 kbps).mp3");
+const audio = new Audio("SongAudio/30 Hours (320 kbps).mp3");
 
-// const audio = songs;
 const button = document.getElementById("play-pause-button");
 const trackTime = document.getElementById("current-time");
 const totalTime = document.getElementById("total-time");
 const seekBar = document.getElementById("seek-bar");
+const song1 = document.getElementById("song1record");
+const song2 = document.getElementById("song2record");
+const song3 = document.getElementById("song3record");
+
+
+
+
 let seeking = false;
 // Array of Songs to allow selection
 let songs = [
     {
-        title: "Song 1",
+        title: "Song1",
         src: "SongAudio/30 Hours (320 kbps).mp3"
     }, {
-        title: "Song 2",
+        title: "Song2",
         src: "SongAudio/Brent Faiyaz & Paperboyfabe - Language (320 kbps).mp3"
     }, {
-        title: "Song 3",
+        title: "Song3",
         src: "SongAudio/Nothing Can Stop Me (320 kbps).mp3"
     }
 ]
@@ -27,7 +33,6 @@ let currentSongIndex = 0;
 // updates the source of audio object with a song from array
 
 function playSong(songIndex) {
-    audio.src = songs[currentSongIndex].src;
     audio.play();
 }
 
@@ -38,6 +43,7 @@ function nextSong() {
     if (currentSongIndex >= songs.length) {
         currentSongIndex = 0;
     }
+    audio.src = songs[currentSongIndex].src;
     playSong(currentSongIndex);
 }
 
@@ -48,6 +54,7 @@ function previousSong() {
     if (currentSongIndex < 0) {
         currentSongIndex = songs.length - 1;
     }
+    audio.src = songs[currentSongIndex].src;
     playSong(currentSongIndex);
 }
 
@@ -59,6 +66,26 @@ audio.onended = function () {
     seekBar.value = 0;
     nextSong();
 };
+
+
+
+song1.onclick = (event) => {
+    currentSongIndex = 0
+    audio.src = songs[currentSongIndex].src
+
+}
+
+song2.onclick = (event) => {
+    currentSongIndex = 1
+    audio.src = songs[currentSongIndex].src
+}
+
+song3.onclick = (event) => {
+    currentSongIndex = 2
+    audio.src = songs [currentSongIndex].src
+}
+
+
 
 
 // loop that creates a button to assign onclick events

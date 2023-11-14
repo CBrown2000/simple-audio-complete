@@ -6,12 +6,20 @@ h4 {
   user-select: none;
 }
 
+#main-container {
+  width: 330px;
+  height: 225px;
+  background-color: rgb(83, 56, 16);
+  padding: 20px;
+  border-radius: 25px;
+}
+
 /* container area */
 
 #container {
   width: 330px;
   height: 50px;
-  background-color: bisque;
+  background-color: rgb(216, 180, 135);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -25,7 +33,7 @@ h4 {
 #song-button-container {
   width: 330px;
   height: 115px;
-  background-color: beige;
+  background-color: rgb(83, 56, 16);
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -81,5 +89,31 @@ h4 {
 #seek-bar {
   width: 150px;
   margin-left: 10px;
+  cursor: pointer;
+}
+
+/* next and previous buttons */
+#spb {
+  margin-left: 115px;
+  width: 90px;
+  height: 60px;
+  background-color: rgb(216, 180, 135);
+  display: flex;
+  align-items: center;
+  object-fit: contain;
+  padding-left: 10px;
+  border-radius: 25px;
+}
+
+#previous-button {
+  width: 40px;
+  height: 30px;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+#next-button {
+  width: 40px;
+  height: 30px;
   cursor: pointer;
 }
